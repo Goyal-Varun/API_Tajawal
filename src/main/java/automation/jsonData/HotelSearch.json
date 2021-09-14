@@ -1,0 +1,13 @@
+{
+  "checkIn": "2021-09-27",
+  "checkOut": "2021-09-28",
+  "roomsInfo": [
+    {
+      "adultsCount": 2,
+      "kidsAges": [
+2,2
+      ]
+    }
+  ],
+  "query": "dubai"
+}

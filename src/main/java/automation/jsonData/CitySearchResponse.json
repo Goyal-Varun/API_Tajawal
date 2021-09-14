@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "hotels": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "country": {
+              "type": "string"
+            },
+            "displayType": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "latitude": {
+              "type": "number"
+            },
+            "name": {
+              "type": "string"
+            },
+            "hotelId": {
+              "type": "integer"
+            },
+            "thumbnail_url": {
+              "type": "string"
+            },
+            "isActive": {
+              "type": "boolean"
+            },
+            "longitude": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "country",
+            "displayType",
+            "city",
+            "latitude",
+            "name",
+            "hotelId",
+            "thumbnail_url",
+            "isActive",
+            "longitude"
+          ]
+        }
+      ]
+    },
+    "locations": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "country": {
+              "type": "string"
+            },
+            "displayType": {
+              "type": "string"
+            },
+            "city": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "placeId": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "googleType": {
+              "type": "object",
+              "properties": {
+                "typeNameEn": {
+                  "type": "string"
+                },
+                "typeNameAr": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "typeNameEn",
+                "typeNameAr"
+              ]
+            }
+          },
+          "required": [
+            "country",
+            "displayType",
+            "city",
+            "name",
+            "placeId",
+            "source",
+            "googleType"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "hotels",
+    "locations"
+  ]
+}
